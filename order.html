@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place order | Portfolio |Tendai Shoko</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="order.html">Place an order</a></li>
+    </ul>
+  </nav>
+  
+  <section id="order" class="order-section">
+  <div class="form-container">
+    <h1>Place an Order</h1>
+    <form action="[your-form-submission-url]" method="POST">
+
+      <fieldset>
+        <legend>1. Contact Information</legend>
+        
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Tee Shoko" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="e.g tee@gmail.com" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Project Details</legend>
+
+        <div class="form-group">
+          <label for="service">Type of Service:</label>
+          <select id="service" name="service" required>
+            <option value="">-- Select a Service --</option>
+            <option value="web-design">Website Design</option>
+            <option value="logo-design">Logo Design</option>
+            <option value="maintenance">Website Maintenance</option>
+            <option value="other">Other (Specify Below)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Detailed Project Description:</label>
+          <textarea id="description" name="description" rows="5" placeholder="Describe your project in detail..." required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Budget & Timeline</legend>
+
+        <div class="form-group">
+          <label for="budget">Approximate Budget:</label>
+          <input type="text" id="budget" name="budget" placeholder="e.g. $500 - $1000" required>
+        </div>
+
+        <div class="form-group">
+          <label for="timeline">Preferred Timeline:</label>
+          <input type="text" id="timeline" name="timeline" placeholder="e.g. 2 weeks, 1 month" required>
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <button type="submit" class="btn-submit">Submit Request</button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+  <footer>
+    <p>&copy; 2026 Tendai Shoko | Web Developer</p>
+  </footer>
+
+</body>
+</html>
